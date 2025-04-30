@@ -1,11 +1,47 @@
-#4. # Pedir al usuario que ingrese el número que quiere multiplicar
+
+
+ACTIVIDAD PYTHON
+
+
+#1. EJERCICIO 1 CLASIFICADOR DE NÚMEROS
+Numero_entero = (int(input("Escribe un numero:"))) #SE SOLICITA ENTRADA AL USUARIO
+if Numero_entero >0:                           #SE DETERMINA SI  ES POSITIVO
+    print("El numero es positivo ")
+elif Numero_entero <0:
+    print ("El numero es negativo")            #SE DETERMINA SI  ES NEGATIVO
+else:
+    print ("El numero es 0 ")                  # SI ES CERO
+
+
+#2.EJERCICIO 2  APROBADO Y REPROBADO
+calificacion = int(input("Ingresa tu calificacion de 0 a 100: "))
+if calificacion >=60 and calificacion <=100:
+    print("Aprobado")
+else:
+    if calificacion < 60:
+      print("Reprobado")
+
+#3. EJERCICIO 3 TABLA DE MULTIPLICAR
+# Pedir al usuario que ingrese el número que quiere multiplicar
+multiplica = int( input("Escribe un numero que quieras multiplicar: "))
+# Realizar la multiplicación con los números del 1 al 10
+for Numero_multiplica in range (1, 11):
+    resultado = multiplica * Numero_multiplica #Se crea una multiplicación que va desde 1 a 10
+    print (f"{multiplica}  X  {Numero_multiplica}  =  {resultado}")
+
+
+
+
+#4. EJERCICIO 4 CONTADOR REGRESIVO 
+# Pedir al usuario que ingrese el número que quiere multiplicar
 multiplica = int( input("Escribe el número que deseas multiplicar: "))
 # Realizar la multiplicación con los números del 1 al 10
 for Numero_multiplica in range (1, 11):
     resultado = multiplica* Numero_multiplica #Se crea una multiplicación que va desde 1 a 10
     print (f"{multiplica}  X  {Numero_multiplica}  =  {resultado}")
 
-#5. import random  # Importamos la librería que nos permite generar números aleatorios
+#5. EJERCICIO 5 ADIVINA EL NUMERO
+import random  # Importamos la librería que nos permite generar números aleatorios
 
 numero_secreto = random.randint(1, 10)  # Generamos un número aleatorio entre 1 y 10
 # Este será el número que el usuario debe adivinar
